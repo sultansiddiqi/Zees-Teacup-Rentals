@@ -4,28 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zees Teacup Rentals</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Lightbox2 CSS from CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
 </head>
 <body>
     <div class="container">
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-overlay">
-                <div class="hero-text">
-                    <h1>Zees Teacup Rentals</h1>
-                    <p>Elegant teacups for your special events and gatherings.</p>
-                </div>
-            </div>
-        </section>
+ <!-- Hero Section -->
+<section class="hero">
+    <div class="hero-overlay">
+        <div class="hero-text">
+            <h1>Zees Teacup Rentals</h1>
+            <p>Discover the elegance of our unique teacups for every occasion.</p>
+        </div>
+    </div>
+</section>
 
         <!-- Gallery Section -->
         <section id="gallery">
             <h2>Our Teacup Collection</h2>
             <div class="gallery-container">
-                <img src="images/teacup1.jpg" alt="Elegant Teacup 1">
-                <img src="images/teacup2.jpg" alt="Elegant Teacup 2">
-                <img src="images/teacup3.jpg" alt="Elegant Teacup 3">
-                <!-- Add more images here as needed -->
+                <a href="images/image1.png" data-lightbox="teacup-gallery" data-title="Elegant Teacup 1">
+                    <img src="images/image1.png" alt="Elegant Teacup 1">
+                </a>
+                <a href="images/image2.png" data-lightbox="teacup-gallery" data-title="Elegant Teacup 2">
+                    <img src="images/image2.png" alt="Elegant Teacup 2">
+                </a>
+                <a href="images/image3.png" data-lightbox="teacup-gallery" data-title="Elegant Teacup 3">
+                    <img src="images/image3.png" alt="Elegant Teacup 3">
+                </a>
+                <a href="images/image4.png" data-lightbox="teacup-gallery" data-title="Elegant Teacup 4">
+                    <img src="images/image4.png" alt="Elegant Teacup 4">
+                </a>
+                <a href="images/image5.png" data-lightbox="teacup-gallery" data-title="Elegant Teacup 5">
+                    <img src="images/image5.png" alt="Elegant Teacup 5">
+                </a>
+                <a href="images/image6.png" data-lightbox="teacup-gallery" data-title="Elegant Teacup 6">
+                    <img src="images/image6.png" alt="Elegant Teacup 6">
+                </a>
+                <a href="images/image7.png" data-lightbox="teacup-gallery" data-title="Elegant Teacup 7">
+                    <img src="images/image7.png" alt="Elegant Teacup 7">
+                </a>
+                <a href="images/image8.png" data-lightbox="teacup-gallery" data-title="Elegant Teacup 8">
+                    <img src="images/image8.png" alt="Elegant Teacup 8">
+                </a>
             </div>
         </section>
 
@@ -42,5 +64,16 @@
             <p>&copy; 2024 Zees Teacup Rentals. All rights reserved.</p>
         </footer>
     </div>
+
+    <!-- Use an Alternative Known Working CDN for Lightbox2 JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+
+    <!-- Initialize Lightbox2 -->
+    <script>
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true
+        });
+    </script>
 </body>
 </html>
